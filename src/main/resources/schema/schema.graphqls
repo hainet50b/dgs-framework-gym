@@ -1,0 +1,15 @@
+type Member {
+    id: ID!
+    name: String!
+    age: Int
+    generation: String!
+}
+
+type Query {
+    member(id: ID!): Member
+    members: [Member!]!
+}
+
+type Mutation {
+    updateAge(id: ID!, age: Int): Member!
+}
