@@ -6,8 +6,8 @@ type Member {
 }
 
 type Query {
-    member(id: ID!): Member
-    members: [Member!]!
+    member(id: ID!): Member!
+    members: [Member]!
 }
 
 type Mutation {
